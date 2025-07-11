@@ -202,6 +202,8 @@ void track(void)
     // 无传感器检测到信号（偏离轨道）
     else 
     {
+        
+        
         // 保持上一次的偏差，或根据需求设置搜索逻辑（如小幅摆动）
         // 此处简单处理：维持当前偏差，LED报警
         DL_GPIO_setPins(GPIO_LED_PORT, GPIO_LED_PIN_LED_PIN);
