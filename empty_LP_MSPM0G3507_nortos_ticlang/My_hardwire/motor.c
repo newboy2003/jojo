@@ -32,8 +32,8 @@ void motor_speed(int leftspeed, int rightspeed)
     }
     
     // 设置PWM占空比
+    DL_TimerA_setCaptureCompareValue(PWM_0_INST, rightspeed, DL_TIMER_CC_1_INDEX);
     DL_TimerG_setCaptureCompareValue(PWM_1_INST, leftspeed, DL_TIMER_CC_1_INDEX);
-    DL_TimerG_setCaptureCompareValue(PWM_0_INST, rightspeed, DL_TIMER_CC_1_INDEX);
 }
 
 int err = 0;

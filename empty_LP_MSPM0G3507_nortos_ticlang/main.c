@@ -42,7 +42,7 @@ int main(void)
     SYSCFG_DL_init();
 
     // 启动PWM定时器
-    DL_TimerG_startCounter(PWM_0_INST);
+    DL_TimerA_startCounter(PWM_0_INST);
     DL_TimerG_startCounter(PWM_1_INST);
 
     // 初始化PID参数
